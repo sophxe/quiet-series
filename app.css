@@ -8,14 +8,13 @@ body {
 header {
     width: 100%;
     top: 0;
-    /* left: 0; */
     position: sticky;
     background-color: #161616;
 }
 
 h1 {
     color: #b60202;
-    padding-left: 30em;
+    padding-left: 10em;
     padding-top: 0.5em;
 }
 
@@ -31,6 +30,7 @@ main {
 
 .volunteer-image {
     width: 250px;
+    max-width: 100%;
     height: 250px;
     border-radius: 50%;
 }
@@ -55,14 +55,19 @@ main {
 @media (max-width: 1500px) {
     .volunteers {
         flex-direction: column;
+        align-items: center;
     }
-    .volunteer-card-refs {
-        text-align: center;
+    .volunteer-card {
+        max-width: 100%;
     }
-    .volunteer-card-platform {
-        text-align: center;
+
+    h1 {
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 1.5em;
     }
 }
+
 a {
     text-decoration: none;
 }
